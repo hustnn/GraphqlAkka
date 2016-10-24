@@ -10,7 +10,7 @@ Based on the Akka implementation, each record in GraphqlAkka is an actor in Akka
 
 Techniquies we used in the project: 
 
-Graphql Akka core, Akka sharding, Akka persistent(levelDB or Cassandra), Akka http.
+Graphql, Akka core, Akka sharding, Akka persistent(levelDB or Cassandra), Akka http.
 
 I have already attempted to show how to support graphql by utilizing akka actor as the backend data store which is shown in the current codebase. Currently, the query is parsed in our akka http layer, then the data request is sent to the corresponding actor and get the responses. It shows that my prososal is possbile and I will continue to finish this interesting project.
 
