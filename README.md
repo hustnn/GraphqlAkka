@@ -14,6 +14,8 @@ Graphql, Akka core, Akka sharding, Akka persistent(levelDB or Cassandra), Akka h
 
 I have already attempted to show how to support graphql by utilizing akka actor as the backend data store which is shown in the current codebase. Currently, the query is parsed in our akka http layer, then the data request is sent to the corresponding actor and get the responses. It shows that my prososal is possbile and I will continue to finish this interesting project.
 
+I use the same starwars example provided by https://github.com/sangria-graphql/sangria-akka-http-example. The schema definitions keep the same as sangria-akka-http-example but the data is retrived from the akka-based backend data stores.
+
 Test:
 
 After running it, you can input the query like this and get the result:
